@@ -351,7 +351,12 @@ document
 checkNoticeInput
 );
 
-
+document
+.getElementById("noticeTime")
+.addEventListener(
+"change",
+checkNoticeInput
+);
 
 function goHomeNotice(){
 
@@ -420,7 +425,12 @@ window.onload = function(){
         document.getElementById("noticeDate").value =
         notices[index].date;
 
+document.getElementById("noticeTime").value =
+notices[index].time || "";
 
+if(notices[index].time){
+    document.getElementById("timePlaceholder").style.display = "none";
+}
         document.querySelector(".save").textContent =
         "💾 更新";
 document.getElementById("homeNoticeBtn").textContent =

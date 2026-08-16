@@ -1737,4 +1737,9 @@ body.swal2-shown{
         box-sizing: border-box;
     }
 
+}.app,
+.phone {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
 }

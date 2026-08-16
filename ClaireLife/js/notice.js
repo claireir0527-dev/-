@@ -281,9 +281,13 @@ if(document.getElementById("noticeDate")){
 
 function cancelNotice(){
 
-    document.getElementById("noticeText").value="";
+    document.getElementById("noticeText").value = "";
 
-    document.getElementById("noticeDate").value="";
+    document.getElementById("noticeDate").value = "";
+
+    document.getElementById("noticeTime").value = "";
+
+    document.getElementById("timePlaceholder").style.display = "block";
 
 
     document.getElementById("cancelNoticeBtn")
@@ -302,43 +306,34 @@ function checkNoticeInput(){
     let text =
     document.getElementById("noticeText").value;
 
-
     let date =
     document.getElementById("noticeDate").value;
 
+    let time =
+    document.getElementById("noticeTime").value;
 
     let cancel =
     document.getElementById("cancelNoticeBtn");
-
 
     let home =
     document.getElementById("homeNoticeBtn");
 
 
-
-    if(text != "" || date != ""){
-
+    if(text != "" || date != "" || time != ""){
 
         cancel.style.display="block";
 
-
         home.style.display="none";
-
 
     }else{
 
-
         cancel.style.display="none";
 
-
         home.style.display="block";
-
 
     }
 
 }
-
-
 
 document
 .getElementById("noticeText")

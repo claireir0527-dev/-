@@ -446,3 +446,13 @@ function(){
     }
 
 }
+const noticeTime = document.getElementById("noticeTime");
+const timePlaceholder = document.getElementById("timePlaceholder");
+
+noticeTime.addEventListener("change", function(){
+    if(this.value){
+        timePlaceholder.style.display = "none";
+    }else{
+        timePlaceholder.style.display = "block";
+    }
+});

@@ -1948,3 +1948,70 @@ button {
 
     box-sizing: border-box;
 }
+/* 通知の時間欄：スマホ幅に完全に合わせる */
+.notice-time-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+
+    height: 55px;
+
+    margin: 10px 0 !important;
+    padding: 0 12px !important;
+
+    display: flex;
+    align-items: center;
+
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    background: #fff;
+
+    box-sizing: border-box !important;
+
+    overflow: hidden;
+}
+
+.notice-time-box span {
+    flex: 0 1 auto;
+    min-width: 0;
+
+    white-space: nowrap;
+
+    font-size: 16px;
+    color: #999;
+}
+
+.notice-time-box #noticeTime {
+    flex: 1 1 auto;
+
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+
+    height: 51px !important;
+
+    margin: 0 !important;
+    padding: 0 0 0 5px !important;
+
+    border: none !important;
+    outline: none !important;
+
+    background: transparent !important;
+
+    box-sizing: border-box !important;
+
+    font-size: 16px;
+}
+
+
+/* スマホ */
+@media screen and (max-width: 600px) {
+
+    .notice-time-box {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+}

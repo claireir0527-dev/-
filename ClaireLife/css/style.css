@@ -1785,3 +1785,19 @@ body.swal2-shown{
     position:relative;
     z-index:2;
 }
+.notice-time-box{
+    position:relative;
+}
+
+#timePlaceholder{
+    position:absolute;
+    left:14px;
+    color:#999;
+    font-size:16px;
+    pointer-events:none;
+}
+
+#noticeTime{
+    position:relative;
+    z-index:2;
+}
